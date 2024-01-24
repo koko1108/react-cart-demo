@@ -7,6 +7,7 @@ import QuantityBtn from "./quantityBtn";
 function ProductList() {
   let [productList, setProductList] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetch("https://hoyinleung.github.io/demoapi/react-basic-product.json")
       .then((response) => response.json())
